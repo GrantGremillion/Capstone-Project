@@ -4,11 +4,11 @@ import * as React from 'react';
 import {Button, Grid} from '@mui/material';
 
 
-function App() {
+function createClass() {
   return (
-    <div className="App">
+    <div className="createClass">
 
-        <Grid container spacing={2}
+        <Grid container spacing={4}
             direction="column"
             alignItems="center"
             justifyContent="center">
@@ -18,12 +18,12 @@ function App() {
           </Grid>
           <Grid item xs={2}>
             <Button variant="contained" color="primary" size="large"  onClick={() => {alert('clicked');}} style={{ width: '200px' }} >
-              Student
+              Create a Class
             </Button>
           </Grid>
           <Grid item xs={3}>
             <Button variant="contained" color="primary" size="large"  onClick={() => {alert('clicked');}} style={{ width: '200px' }} >
-              Teacher
+              Create a Class
             </Button>
           </Grid>
         </Grid>
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default createClass
